@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ex02 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num;
+		try {
+			System.out.println("Informe um número inteiro");
+			num = scan.nextInt();
+			System.out.println(num);
+
+		} catch (Exception e) {
+			System.out.println("Número que foi informado é inválido");
+		}
+
+	}
+
+}

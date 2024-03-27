@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ex02 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num;
+		try {
+			System.out.println("Informe um número inteiro");
+			if (scan.hasNext()) {
+				num = scan.nextInt();
+				Metodos m = new Metodos();
+				System.out.println(num);
+				System.out.println(m.Fibonacci(num));
+			}
+
+		} catch (Exception e) {
+			System.out.println("Número informado inválido!");
+		}
+
+	}
+
+}
